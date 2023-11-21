@@ -2,6 +2,8 @@
 This fastapi tutorial was adapted from Pablo Nava Barrera. See his profile here:
 [Github](https://github.com/pnavab/)
 [LinkedIn](https://www.linkedin.com/in/pablonavabarrera/)
+
+
 We'll be making an API that simulates flipping a coin. First we must gather all required dependencies in case we do not already have it on our computer. Pip is a package manager for Python packages.  
 - Install FastAPI by running `pip install fastapi`
 - Install uvicorn by running `pip install uvicorn`  
