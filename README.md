@@ -1,5 +1,5 @@
 # Before starting
-This FastApi tutorial was adapted from Pablo Nava Barrera. See his profile here:
+This FastApi tutorial was adapted from **Pablo Nava Barrera**. See his profile here:
 
 [Github](https://github.com/pnavab/)
 
