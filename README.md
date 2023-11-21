@@ -1,6 +1,8 @@
 # Before starting
 This fastapi tutorial was adapted from Pablo Nava Barrera. See his profile here:
+
 [Github](https://github.com/pnavab/)
+
 [LinkedIn](https://www.linkedin.com/in/pablonavabarrera/)
 
 
