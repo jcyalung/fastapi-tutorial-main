@@ -63,6 +63,14 @@ def draw_cards(times: int = 5):
         return(drawn)
     else:
         return({"message": "you need to send valid times"})
-    
+
+@app.get("/random-digit/{range}")
+def random_digit(range: int):
+    if int and int < 0:
+        return ({"message": "you need to send valid times"})
+    val = random.uniform(0, int)
+    return({"Digit": int(val)})
+
+
 if __name__ == "__main__":
     uvicorn.run("server:app", port=8000, reload=True)
