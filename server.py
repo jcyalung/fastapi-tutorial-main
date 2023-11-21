@@ -64,11 +64,11 @@ def draw_cards(times: int = 5):
     else:
         return({"message": "you need to send valid times"})
 
-@app.get("/random-digit/{range}")
-def random_digit(range: int):
-    if int and int < 0:
+@app.get("/random-digit/{num}")
+def random_digit(num: int):
+    if num and num < 0:
         return ({"message": "you need to send valid times"})
-    val = random.uniform(0, int)
+    val = random.uniform(0, num)
     return({"Digit": int(val)})
 
 
