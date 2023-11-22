@@ -52,8 +52,9 @@ def draw_cards(times: int = 5):
     if times and times > 0:
         drawn = {}
         for i in range(times):
-            val = random.uniform(0,51)
+            val = random.uniform(0, len(card_deck))
             drawn[card_deck[int(val)]] = 1
+            card_deck.pop(int(val))
         return(drawn)
     else:
         return({"message": "you need to send valid times"})
@@ -65,6 +66,16 @@ def random_digit(num: int):
     val = random.uniform(0, num)
     return({"Digit": int(val)})
 
+@app.get("/print-deck")
+def print_deck():
+    card_deck = game.deck()
+    deck_str = ""
+    for i in range(len(card_deck)):
+        if i == len(card_deck) - 1:
+            deck_str += card_deck[i]
+        else:
+            deck_str += card_deck[i] + ", "
+    return ({"Deck:" : deck_str})
 
 if __name__ == "__main__":
     uvicorn.run("server:app", port=8000, reload=True)
